@@ -1,0 +1,44 @@
+name: ✨ Verbetering of nieuwe functie
+description: Stel een nieuwe functie of verbetering voor
+title: "[Feature]: "
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: probleem
+    attributes:
+      label: Welk probleem wil je oplossen?
+      description: Beschrijf de situatie of het knelpunt, nog niet de oplossing.
+      placeholder: Als planner moet ik nu elke week handmatig ...
+    validations:
+      required: true
+
+  - type: textarea
+    id: oplossing
+    attributes:
+      label: Voorgestelde oplossing
+      description: Hoe zou het volgens jou moeten werken?
+    validations:
+      required: true
+
+  - type: input
+    id: gebruikers
+    attributes:
+      label: Voor wie is dit?
+      placeholder: bijv. planners, monteurs, klant RWE, intern MAAK
+
+  - type: dropdown
+    id: prioriteit
+    attributes:
+      label: Hoe belangrijk is dit?
+      options:
+        - Hoog, nodig voor lopend werk
+        - Gemiddeld, zou veel tijd besparen
+        - Laag, nice to have
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatieven
+    attributes:
+      label: Alternatieven of huidige werkwijze
+      description: Hoe los je het nu op, of welke andere oplossingen heb je overwogen?
